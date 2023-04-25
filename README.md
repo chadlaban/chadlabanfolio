@@ -1,3 +1,3 @@
 # chadlaban-folio
 
-Hi! Thank you for being curious enough to open this file, this is my very simple portfolio.
+Hi! Welcome to my portolio, this is just a simple folio where I presented my personal experiences with work and on university.
