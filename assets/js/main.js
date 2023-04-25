@@ -115,3 +115,12 @@
 			});
 
 })(jQuery);
+
+// personal JS
+
+// JavaScript to expand 'Learn More'
+const expandElement = document.querySelector("#expandable");
+const expandBtn = document.querySelector("#learn-more-btn");
+expandBtn.onclick = function() {
+	expandElement.classList.toggle("hidden");
+};
