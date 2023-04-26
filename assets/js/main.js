@@ -124,3 +124,39 @@ const expandBtn = document.querySelector("#learn-more-btn");
 expandBtn.onclick = function() {
 	expandElement.classList.toggle("hidden");
 };
+
+const submitReachOut = document.querySelector("#submit-btn");
+submitReachOut.onclick = function() {
+	// console.log("clicked");
+	const contactForm = document.querySelector('#form');
+	const name = document.querySelector('[name="name"]');
+	const email = document.querySelector('[name="email"]');
+	const message = document.querySelector('[name="content"]');
+	// validation before sending the data
+	if (name.value.length === 0 || name.value.length === 0 || name.value.length === 0) {
+		document.querySelector("#popup").innerHTML = `<div class="alert">
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+			Please fill in the inputs.
+		</div>`;
+	} else {
+		let data = new FormData(contactForm);
+		// fetch("_url_here", { method: "POST", body: data });
+		document.querySelector("#popup").innerHTML = `<div class="success">
+			<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+			Thank you! your message has been sent. (Note: Just for form validation purposes.)
+		</div>`;
+		contactForm.reset();
+	}
+};
+
+// function sendEmail() { 
+// 	Email.send({ 
+// 		Host: "smtp.gmail.com", 
+// 		Username: "sender@email_address.com", 
+// 		Password: "Enter your password", 
+// 		To: 'receiver@email_address.com', 
+// 		From: "sender@email_address.com", 
+// 		Subject: "Sending Email using javascript", 
+// 		Body: "Well that was easy!!", 
+// 	}) 
+// } 
