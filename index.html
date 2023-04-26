@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/png" href="images/logo.png" />
+		<script src="https://smtpjs.com/v3/smtp.js"></script> 
 	</head>
 	<body class="is-preload">
 
@@ -38,16 +39,16 @@
 							company and did not expect to get accepted on my 2nd try applying for the position.
 
 							<br /><br />The first few weeks was a challenge when I started my software developer career, considering that I haven't done any coding practice ever 
-							since I graduated from university. I even started to doubt myself because of the challenges, but knowing who I am, I still faced those challenges. As time
-							passes and I got to work along with amazing developers this made my path more interesting and fun, which is something I did not expect on a corporate job.
+							since I graduated from university. I even started to doubt myself because of the challenges, but knowing who I truely am, I still faced those challenges. As time
+							passes and got the opportunity to work along side with amazing developers this made my path more interesting and fun, which is something I did not expect on a corporate job.
 
 							<br /><br />There are a lot of factors that ignited my passion for software development, but the biggest impact in my career so far to do better at this role was 
-							actually the people I had the chance to work with.
+							actually the people I had the chance to work with and the new learnings that I chance upon on every new task or project.
 						</p>
 						<p id="expandable" hidden>
 							I am a person who loves learning more from people and I'm someone who always strive to have quality outputs for work. I also appreciate
 							working with teams and learning from them. Outside work, I'm someone who loves playing FPS and single player games. I also love cooking meals
-							for myself and I also jog occasionally, and trying to start a hobby of reading books.
+							for myself and I also jog occasionally, and trying to start a new hobby of reading books.
 						</p>
 						<ul class="actions">
 							<li><a class="button" id="learn-more-btn">Learn More</a></li>
@@ -62,21 +63,53 @@
 								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
 								<h3>Software Developer</h3>
 								<p>I have 1 year experience along with HTML, CSS, JavaScript, C#, and SnowFlake; worked on internal/client customizations and trainings for non-technical employees.</p>
+								<br /><h5>Key Responsibilities:</h5>
+								<ul class="alt">
+									<li><p>Collaborate with Project Managers with regards to client requirments.</p></li>
+									<li><p>Producing UI/UX prototypes for internal or client dashboards.</p></li>
+									<li><p>Building efficient, reuseable, and clean code.</p></li>
+									<li><p>Generating unit tests for dashboard before releasing.</p></li>
+									<li><p>Assisting non-technical colleagues with regards to internal technical platforms.</p></li>
+									<li><p>Creating documentations for dashboards for technical and non-technical view.</p></li>
+									<li><p>Collaborating, brainstorming, and giving a helping hand to fellow developers.</p></li>
+								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
 								<h3>Software Analyst</h3>
 								<p>Started my career as a Software Analyst, had 1 and a half year experience within this role. Worked on technical support and documentation for software products.</p>
+								<br /><h5>Key Responsibilities:</h5>
+								<ul class="alt">
+									<li><p>Collaborating and brainstorming with Team Leads with regards to complex client issues.</p></li>
+									<li><p>Taking inbound calls from clients and assisting them with regards to the software platform we offer.</p></li>
+									<li><p>Assist clients with their issue/concern with the software product.</p></li>
+									<li><p>Document issues and troubleshoot them as fast and efficient as possible.</p></li>
+									<li><p>Collaborating with diverse teams with regards to cross-functional issues.</p></li>
+								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
 								<h3>Content Management - Wordpress</h3>
 								<p>Worked on content management and data validation for a restaurant website during my Internship.</p>
+								<br /><h5>Key Responsibilities:</h5>
+								<ul class="alt">
+									<li><p>Validate data and information to be added on the WordPress website.</p></li>
+									<li><p>Making adjustments to website based from client feedback.</p></li>
+									<li><p>Making sure WordPress components are running smoothly.</p></li>
+									<li><p>Adding customized JavaScript if needed.</p></li>
+								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
 								<h3>Recruitment System</h3>
 								<p>Worked on front-end development (HTML, CSS, JavaScript, and BootStrap) for our thesis project for the Bureau of Fire Protection Cordillera (BFP).</p>
+								<br /><h5>Key Responsibilities:</h5>
+								<ul class="alt">
+									<li><p>Producing UI/UX for the recruitment website.</p></li>
+									<li><p>Converting UI/UX prototype to actual front-end code using BootStrap4 plus additional customized HTML, CSS, and JavaScript code.</p></li>
+									<li><p>Testing recruitment forms if data and information is being passed correctly to the Database (phpMyAdmin).</p></li>
+									<li><p>Producing technical and non-technical documentation for the website.</p></li>
+								</ul>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
@@ -91,7 +124,7 @@
 						<p>Thank you for checking my portfolio! I hope you found something that's interesting about me. Please feel free to contact me if you have any inquiries.</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form id="form">
 									<div class="row gtr-uniform gtr-50">
 										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -99,7 +132,7 @@
 									</div>
 								</form>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" id="submit-btn"/></li>
 								</ul>
 							</div>
 							<div class="col-4 col-12-small">
@@ -126,6 +159,8 @@
 							</div>
 						</div>
 					</section>
+					<div id="popup">
+					</div>
 			</div>
 
 		<!-- Footer -->
@@ -148,6 +183,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>

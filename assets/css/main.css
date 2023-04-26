@@ -3224,3 +3224,43 @@ input, select, textarea {
 .hidden {
 	display: block;
 }
+
+/* Updating alert/info browser default box */
+/* The alert message box */
+.alert {
+	padding: 10px;
+    background-color: #f44336;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto;
+}
+
+.success {
+	padding: 10px;
+    background-color: #04AA6D;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 40%;
+    margin: auto;
+}
+  
+/* The close button */
+.closebtn {
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+	margin-top: 3px;
+}
+  
+/* When moving the mouse over the close button */
+.closebtn:hover {
+	color: black;
+}
