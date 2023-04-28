@@ -3264,3 +3264,40 @@ input, select, textarea {
 .closebtn:hover {
 	color: black;
 }
+
+/*tools and languages*/
+.languages-tools {
+	padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+	
+}
+
+.languages-tools img {
+	padding: 10px;
+	width: 80px;
+}
+
+.icons-tools-languages {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+	height: 1.5rem;
+}
+
+.icons-tools-languages .exp-line-break {
+	width: 30%;
+    margin-left: 3.5rem;
+}
+
+.icons-tools-languages h5 {
+	margin-left: 1rem;
+    margin-top: 12px;
+}
