@@ -3225,23 +3225,24 @@ input, select, textarea {
 	display: flex;
 }
 
-.expandable{
-	height: 0px;
-	width: 0px;
+.expandable {
+	height: auto;
+	width: auto;
 	padding: 0px;
-	opacity: 0;
 	border: none;
+	font-size: 0px;
 }
   
 .transition {
-	transition: all 1.5s ease-out;
+	transition: all 1s ease-out;
 }
   
 .transition-clicked {
-	height: 116px;
-	width: 655px;
+	height: auto;
+	width: auto;
 	opacity: 1;
 	border: none;
+	font-size: 16px;
 }
 
 /* Updating alert/info browser default box */
