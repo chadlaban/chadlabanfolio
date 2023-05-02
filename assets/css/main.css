@@ -3221,8 +3221,27 @@ input, select, textarea {
 	}
 
 /*Personal CSS*/
-.hidden {
-	display: block;
+.show {
+	display: flex;
+}
+
+.expandable{
+	height: 0px;
+	width: 0px;
+	padding: 0px;
+	opacity: 0;
+	border: none;
+}
+  
+.transition {
+	transition: all 1.5s ease-out;
+}
+  
+.transition-clicked {
+	height: 116px;
+	width: 655px;
+	opacity: 1;
+	border: none;
 }
 
 /* Updating alert/info browser default box */
