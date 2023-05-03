@@ -124,3 +124,11 @@ const expandBtn = document.querySelector("#learn-more-btn");
 expandBtn.onclick = function() {
 	expandElement.classList.toggle("transition-clicked");
 };
+
+// Loading Screen
+const loaderContainer = document.querySelector(".loader");
+window.onload = function() {
+    loaderContainer.style.display = "none";
+	document.querySelector("#header").style = "opacity: 1;";
+	document.querySelector("#main").style = "opacity: 1;";
+};
