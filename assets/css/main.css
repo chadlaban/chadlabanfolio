@@ -3344,7 +3344,7 @@ input, select, textarea {
 
 /*Loading element*/
 .loader {
-	position: absolute;
+	position: sticky;
 	left: 50%;
 	top: 50%;
 	z-index: 1;
