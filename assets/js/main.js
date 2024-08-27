@@ -132,3 +132,7 @@ window.onload = function() {
 	document.querySelector("#header").style = "opacity: 1;";
 	document.querySelector("#main").style = "opacity: 1;";
 };
+
+// Current Year
+const currentYear = new Date().getFullYear();
+document.getElementById("current-year").textContent = currentYear;
