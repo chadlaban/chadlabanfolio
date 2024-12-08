@@ -1198,19 +1198,25 @@ $size-header-pad: 4em;
 		padding-bottom: 3em;
 
 		.loader {
-			@include icon(false, solid);
-			@include vendor('animation', 'spin 1s linear infinite');
-			font-size: 1.5em;
-			height: 1em;
-			left: 50%;
-			line-height: 1em;
-			margin: -0.5em 0 0 -0.5em;
 			position: absolute;
+			left: 50%;
 			top: 50%;
-			width: 1em;
-
-			&:before {
-				content: '\f1ce';
+			transform: translate(-50%, -50%);
+			width: 1.5em;
+			height: 1.5em;
+			border: 0.2em solid #f3f3f3;
+			border-top: 0.2em solid #3498db;
+			border-radius: 50%;
+			animation: spin 1.5s linear infinite;
+		
+			&::before {
+				content: '\f110';
+				font-family: 'FontAwesome';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 1.5em;
 			}
 		}
 
