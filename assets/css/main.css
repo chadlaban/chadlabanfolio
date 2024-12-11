@@ -3495,8 +3495,3 @@ body.is-touch .poptrox-popup .closer {
     opacity: 1;
   }
 }
-
-#header,
-#main {
-  opacity: 0.1;
-}
